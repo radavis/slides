@@ -2,7 +2,7 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  erb :code_fast
+  erb :move_fast
 end
 
 get '/instructions' do

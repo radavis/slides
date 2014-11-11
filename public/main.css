@@ -6,3 +6,8 @@
   display: inline;
   padding-right: 5px;
 }
+
+pre.inline {
+  display: inline;
+  padding: 5px;
+}

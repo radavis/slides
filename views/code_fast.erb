@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Your deck.js Presentation</title>
+  <title>Move Fast</title>
 
   <!-- Required stylesheet -->
   <link rel="stylesheet" media="screen" href="/core/deck.core.css">
@@ -34,21 +34,24 @@
 
     <!-- Begin slides. Just make elements with a class of slide. -->
 
-    <section class="slide">
-      <%= haml :intro %>
-    </section>
+    <%
 
-    <section class="slide">
-      <h1>Slide</h1>
-    </section>
+      slides = [
+        :intro,
+        :osx,
+        :editor,
+        :terminal,
+        :browser,
+        :outro
+      ]
 
-    <section class="slide">
-      <h1>Content</h1>
-    </section>
+    %>
 
-    <section class="slide">
-      <h1>Here</h1>
-    </section>
+    <% slides.each do |slide| %>
+      <section class="slide">
+        <%= haml slide %>
+      </section>
+    <% end %>
 
     <!-- End slides. -->
 

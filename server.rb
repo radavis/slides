@@ -2,9 +2,15 @@ require 'sinatra'
 require 'haml'
 
 get '/' do
-  erb :move_fast
-end
+  @slides = [
+    :intro,
+    :primer,
+    :osx,
+    :editor,
+    :terminal,
+    :browser,
+    :outro
+  ]
 
-get '/instructions' do
-  erb :instructions
+  erb :layout
 end

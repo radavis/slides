@@ -35,21 +35,7 @@
 
     <!-- Begin slides. Just make elements with a class of slide. -->
 
-    <%
-
-      slides = [
-        :intro,
-        :primer,
-        :osx,
-        :editor,
-        :terminal,
-        :browser,
-        :outro
-      ]
-
-    %>
-
-    <% slides.each do |slide| %>
+    <% @slides.each do |slide| %>
       <section class="slide">
         <%= haml slide %>
       </section>
@@ -97,7 +83,6 @@
 <!-- Initialize the deck. You can put this in an external file if desired. -->
 <script>
   $(function() {
-    $('li').addClass("slide");
     $.deck('.slide');
   });
 </script>

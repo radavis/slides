@@ -1,9 +1,3 @@
-# Move Fast
 
-Lightning talk on using your environment efficiently.
-
-# Steps
-* clone
-* bundle
-* ruby server.rb
-* open http://localhost:4567/
+* talk about speed of using database over csv
+* mix up csv file so we see more artists/albums

@@ -1,0 +1,58 @@
+%h2 Three-Table Database
+
+%h3 ERD
+
+.erd
+  %table.erd
+    %thead
+      %tr
+        %th songs
+    %tbody
+      %tr
+        %td id (pk)
+      %tr
+        %td artist_id (fk)
+      %tr
+        %td album_id (fk)
+      %tr
+        %td track
+      %tr
+        %td title
+      %tr
+        %td album
+      %tr
+        %td length
+      %tr
+        %td image
+
+.erd
+  %table.erd
+    %thead
+      %tr
+        %th artists
+    %tbody
+      %tr
+        %td id (pk)
+      %tr
+        %td name
+
+.erd
+  %table.erd
+    %thead
+      %tr
+        %th albums
+    %tbody
+      %tr
+        %td id (pk)
+      %tr
+        %td title
+      %tr
+        %td image
+
+%h3 Relationship Between Tables
+
+%ul
+  %li A song <strong>belongs to</strong> an artist. (foriegn key artist_id stored on songs)
+  %li A song <strong>belongs to</strong> an album. (foriegn key album_id stored on songs)
+  %li An artist <strong>has many</strong> songs.
+  %li An album <strong>has many</strong> songs.

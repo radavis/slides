@@ -1,0 +1,42 @@
+%h2 Two-Table Database
+
+%h3 ERD
+
+.erd
+  %table.erd
+    %thead
+      %tr
+        %th songs
+    %tbody
+      %tr
+        %td id (pk)
+      %tr
+        %td artist_id (fk)
+      %tr
+        %td track
+      %tr
+        %td title
+      %tr
+        %td album
+      %tr
+        %td length
+      %tr
+        %td image
+
+.erd
+  %table.erd
+    %thead
+      %tr
+        %th artists
+    %tbody
+      %tr
+        %td id (pk)
+      %tr
+        %td name
+
+
+%h3 Relationship Between Tables
+
+%ul
+  %li A song <strong>belongs to</strong> an artist.
+  %li An artist <strong>has many</strong> songs.

@@ -1,0 +1,48 @@
+%h2 Flat Database
+
+%h3 Songs Data
+
+%table.flat_db
+  %thead
+    %tr
+      %th id
+      %th track
+      %th title
+      %th artist
+      %th album
+      %th length
+      %th image
+  %tbody
+    - @songs.each_with_index do |song, i|
+      %tr
+        %td= i + 1
+        %td= song['track']
+        %td= song['title']
+        %td= song['artist']
+        %td= song['album']
+        %td= song['length']
+        %td
+          %a{ href: song['image'] }>image url
+
+%h3 Entity Relationship Diagram (ERD)
+
+.erd
+  %table.erd
+    %thead
+      %tr
+        %th songs
+    %tbody
+      %tr
+        %td id (pk)
+      %tr
+        %td track
+      %tr
+        %td title
+      %tr
+        %td artist
+      %tr
+        %td album
+      %tr
+        %td length
+      %tr
+        %td image

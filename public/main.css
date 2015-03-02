@@ -1,13 +1,21 @@
-.key-combo {
-  color: white;
-  background-color: black;
-  border: 2px solid black;
-  border-radius: 5px;
-  display: inline;
-  padding-right: 5px;
+table, th, td {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
-pre.inline {
-  display: inline;
-  padding: 5px;
+div.erd {
+  margin: 0 40%;
+}
+
+table.erd {
+  border: 1px solid black;
+  width: 100%;
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+th, td {
+  padding: 0 10px;
 }

@@ -1,0 +1,39 @@
+%h2 Two-Table Database
+
+%h3 Songs Data
+
+%table.flat_db
+  %thead
+    %tr
+      %th id
+      %th artist_id
+      %th track
+      %th title
+      %th album
+      %th length
+      %th image
+  %tbody
+    - @songs.each_with_index do |song, i|
+      %tr
+        %td= i + 1
+        %td= @artists.index(@songs[i]['artist']) + 1
+        %td= @songs[i]['track']
+        %td= @songs[i]['title']
+        %td= @songs[i]['album']
+        %td= @songs[i]['length']
+        %td
+          %a{ href: @songs[i]['image'] }>image url
+
+%h3 Artists Data
+
+%table.flat_db
+  %thead
+    %tr
+      %th id
+      %th name
+  %tbody
+    - @artists.each_with_index do |artist, i|
+      %tr
+        %td= i + 1
+        %td= artist
+

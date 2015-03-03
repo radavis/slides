@@ -1,15 +1,26 @@
-table, th, td {
+table.data td {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 
 div.erd {
-  margin: 0 40%;
+  margin: 0 10%;
 }
 
 table.erd {
   border: 1px solid black;
-  width: 100%;
+  box-shadow: 10px 10px 5px #888888;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+table.erd td {
+  width: 200px;
+  padding: 0 20px;
+}
+
+table.erd th {
+  border-bottom: 1px solid black;
 }
 
 table {

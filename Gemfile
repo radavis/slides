@@ -1,3 +1,8 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'sinatra'
+ruby "2.1.5"
+
+gem "haml"
+gem "pry"
+gem "redcarpet"
+gem "sinatra"

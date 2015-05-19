@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=1024, user-scalable=no">
 
-  <title>Database Relationships</title>
+  <title>Slides</title>
 
   <!-- Required stylesheet -->
   <link rel="stylesheet" media="screen" href="/core/deck.core.css">
@@ -18,7 +18,7 @@
   <link rel="stylesheet" media="screen" href="/extensions/scale/deck.scale.css">
 
   <!-- Style theme. More available in /themes/style/ or create your own. -->
-  <link rel="stylesheet" media="screen" href="/themes/style/web-2.0.css">
+  <link rel="stylesheet" media="screen" href="/themes/style/swiss.css">
   <link rel="stylesheet" media="screen" href="/main.css">
 
   <!-- Transition theme. More available in /themes/transition/ or create your own. -->
@@ -35,11 +35,7 @@
 
     <!-- Begin slides. Just make elements with a class of slide. -->
 
-    <% @slides.each do |slide| %>
-      <section class="slide">
-        <%= haml slide %>
-      </section>
-    <% end %>
+    <%= yield %>
 
     <!-- End slides. -->
 

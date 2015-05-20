@@ -20,6 +20,29 @@ get "/" do
   erb :index
 end
 
+get "/database-persistence" do
+  @slides = [
+    :"database_persistence/intro",
+    :"database_persistence/file_storage",
+    :"database_persistence/database",
+    :"database_persistence/database_example",
+    :"database_persistence/rdbmses",
+    :"database_persistence/postgres_is_awesome",
+    :"database_persistence/installing_postgres",
+    :"database_persistence/create_a_database",
+    :"database_persistence/create_tables",
+    :"database_persistence/schema",
+    :"database_persistence/crud",
+    :"database_persistence/crud_in_sql",
+    :"database_persistence/insert",
+    :"database_persistence/select",
+    :"database_persistence/update",
+    :"database_persistence/delete"
+  ]
+
+  erb :markdown_slides
+end
+
 get "/database-relationships" do
   @slides = [
     :"database_relationships/intro",

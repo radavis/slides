@@ -85,3 +85,18 @@ get "/http" do
 
   erb :markdown_slides
 end
+
+get "/intro-to-oop" do
+  @slides = [
+    :"intro_to_oop/intro",
+    :"intro_to_oop/objects_everywhere",
+    :"intro_to_oop/creating_objects",
+    :"intro_to_oop/defining_objects",
+    :"intro_to_oop/getters_and_setters",
+    :"intro_to_oop/getters_and_setters_shortcuts",
+    :"intro_to_oop/questions",
+    :"intro_to_oop/whats_next"
+  ]
+
+  erb :markdown_slides
+end

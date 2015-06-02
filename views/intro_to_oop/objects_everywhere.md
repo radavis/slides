@@ -1,3 +1,5 @@
+## -
+
 ![Woody and Buzz](images/objects_everywhere.jpg)
 
 ### Everything in Ruby is an Object!

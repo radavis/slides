@@ -5,10 +5,10 @@
 How we access and retrieve resources on the web.
 
 ## URL Components
-### https://horizon.launchacademy.com/searches?query=http
+### https://learn.launchacademy.com/searches?query=pry
 
-* protocol: `http`
-* host: `horizon.launchacademy.com`
+* protocol: `https`
+* host: `learn.launchacademy.com`
 * port: `80` or `443`
 * path: `/searches`
-* query string: `query=http`
+* query string: `query=pry`

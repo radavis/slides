@@ -1,9 +1,9 @@
 ## What's Next?
 
-### Quiz
+### "Pop quiz, hot shot..."
 
 [https://learn.launchacademy.com/quizzes](https://learn.launchacademy.com/quizzes)
 
 ### Daily Challenge
 
-`et get space-jams`
+`et get news-aggregator`

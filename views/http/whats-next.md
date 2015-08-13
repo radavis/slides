@@ -1,8 +1,8 @@
 ## What's Next?
 
-### Diagnostics Quiz
+### Quiz
 
-diagnostics.herokuapp.com
+[https://learn.launchacademy.com/quizzes](https://learn.launchacademy.com/quizzes)
 
 ### Daily Challenge
 

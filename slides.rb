@@ -86,6 +86,23 @@ get "/http" do
   erb :markdown_slides
 end
 
+get "/http-post" do
+  @slides = [
+    :"http-post/intro",
+    :"http-post/definitions",
+    :"http-post/posting",
+    :"http-post/posting-visually",
+    :"http-post/posting-detailed",
+    :"http-post/form-inputs",
+    :"http-post/form-validations",
+    :"http-post/demo",
+    :"http-post/questions",
+    :"http-post/whats-next",
+  ]
+
+  erb :markdown_slides
+end
+
 get "/intro-to-oop" do
   @slides = [
     :"intro_to_oop/intro",

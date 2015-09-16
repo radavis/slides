@@ -18,7 +18,7 @@ my_bookmarks_database(#   url VARCHAR(2047),
 my_bookmarks_database(#   category_id INTEGER
 my_bookmarks_database(# );
 CREATE TABLE
-my_bookmarks_database=# CREATE TABLE categories()
+my_bookmarks_database=# CREATE TABLE categories(
 my_bookmarks_database(#   id SERIAL PRIMARY KEY,
 my_bookmarks_database(#   name VARCHAR(255)
 my_bookmarks_database(# );

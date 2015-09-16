@@ -117,3 +117,20 @@ get "/intro-to-oop" do
 
   erb :markdown_slides
 end
+
+get "/nested-routes" do
+  @slides = [
+    :"nested-routes/intro",
+    :"nested-routes/rails",
+    :"nested-routes/routes",
+    :"nested-routes/crud",
+    :"nested-routes/root-path",
+    :"nested-routes/pages",
+    :"nested-routes/nested-routes",
+    :"nested-routes/rails-defaults",
+    :"nested-routes/railsrc",
+    :"nested-routes/scaffolding"
+  ]
+
+  erb :markdown_slides
+end

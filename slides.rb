@@ -66,8 +66,8 @@ end
 get "/http" do
   @slides = [
     :"http/intro",
-    :"http/http",
     :"http/the-90s-internet",
+    :"http/http",
     :"http/request-response-diagram",
     :"http/request-response",
     :"http/request-response-components",

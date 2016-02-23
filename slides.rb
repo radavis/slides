@@ -20,19 +20,19 @@ get "/" do
   erb :index
 end
 
-get "/acceptance_testing" do
+get "/acceptance-testing" do
   @slides = [
-    :"acceptance_testing/intro",
-    :"acceptance_testing/acceptance-tests",
-    :"acceptance_testing/software-dev-cycle",
-    :"acceptance_testing/waterfall",
-    :"acceptance_testing/agile",
-    :"acceptance_testing/the-path",
-    :"acceptance_testing/user-stories",
-    :"acceptance_testing/acceptance-criteria",
-    :"acceptance_testing/tests",
-    :"acceptance_testing/questions",
-    :"acceptance_testing/whats-next"
+    :"acceptance-testing/intro",
+    :"acceptance-testing/acceptance-tests",
+    :"acceptance-testing/software-dev-cycle",
+    :"acceptance-testing/waterfall",
+    :"acceptance-testing/agile",
+    :"acceptance-testing/the-path",
+    :"acceptance-testing/user-stories",
+    :"acceptance-testing/acceptance-criteria",
+    :"acceptance-testing/tests",
+    :"acceptance-testing/questions",
+    :"acceptance-testing/whats-next"
   ]
   erb :markdown_slides
 end

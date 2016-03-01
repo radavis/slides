@@ -1,8 +1,4 @@
-## -
-
-![Woody and Buzz](images/objects_everywhere.jpg)
-
-### Everything in Ruby is an Object!
+## Everything in Ruby is an Object!
 
 ```
 [1] pry(main)> array = []
